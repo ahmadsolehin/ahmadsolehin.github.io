@@ -28,9 +28,8 @@
 		<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700%7cOpen+Sans:100,200,300,400,700' rel='stylesheet' type='text/css'> 
 
         <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
-        
-        <script src="http://maps.google.com/maps/api/js?sensor=false"></script>
-        
+		
+		<script src="http://maps.google.com/maps/api/js?sensor=false"></script>
         
 
     </head>
@@ -62,35 +61,29 @@
 	</nav>
 
 	<!--main body-->
-	<section id="head">	
+	<section id="head" class="style2">
 		<div class="container">
 			<div class="row">
 				<div class="hero" data-start="top:0px;opacity:1" data-top-bottom="top:500px;opacity:0">
 					<div class="col-sm-8 col-sm-offset-2">
 						<h1>Hi, I'm John Slamr</h1>
-						<div id="carousel-head" class="carousel slide carousel-fade">
-							<div class="carousel-inner">
-								<div class="item active">
-									<h3>UX Designer.</h3>
-								</div>
-								<div class="item">
-									<h3>Frontend Developer.</h3>
-								</div>
-								<div class="item">
-									<h3>Art Director.</h3>
-								</div>
-								<div class="item">
-									<h3>From San Francisco.</h3>
-								</div>
-							</div>
+						<h3>UX Designer.</h3>
+						<div class="social-icons">
+							<a href="#" target="_blank" class="facebook"><i class="fa fa-facebook"></i></a>
+							<a href="#" target="_blank" class="flickr"><i class="fa fa-flickr"></i> </a>
+							<a href="#" target="_blank" class="linkedin"><i class="fa fa-linkedin"></i> </a>
+							<a href="#" target="_blank" class="pinterest"><i class="fa fa-pinterest"></i> </a>
+							<a href="#" target="_blank" class="dribbble"><i class="fa fa-dribbble"></i> </a>
+							<a href="#" target="_blank" class="dropbox"><i class="fa fa-dropbox"></i> </a>
+							<a href="#" target="_blank" class="instagram"><i class="fa fa-instagram"></i> </a>
 						</div>
+
 					</div>
 				</div>
 			</div>
-		</div> 
+		</div>
 		<div id="slides">
 			<div class="slides-container">
-				<img src="img/bg-head-1.jpg" alt="" />
 				<img src="img/bg-head-2.jpg" alt="" />
 			</div>
 		</div>
@@ -345,7 +338,9 @@
 			<div class="row">
 				<div class="hero col-sm-6 col-sm-offset-3">
 					<h2>Curriculum Vitae</h2>
-					<p>Get to know where I've proven my skills</p>
+					<p>
+						Get to know where I've proven my skills
+					</p>
 					<div class="space"></div>
 				</div>
 			</div>
@@ -1067,7 +1062,7 @@
 				</div>
 				<div class="col-sm-6 col-sm-offset-3 animated" data-animation-delay="300" data-animation="fadeInLeft">
 					<h2>John Slamr </h2>
-					<address>						
+					<address>
 						795 Folsom Ave, Suite 600
 						<br>
 						San Francisco, CA 94107
@@ -1143,7 +1138,7 @@
 				SLAMR.preloader();		
 				SLAMR.nav();	
 				SLAMR.parallax(true);							
-				SLAMR.slider("#slides", {'play':5000, 'animation': 'fade'});				
+				SLAMR.slider("#slides", {'play':false, 'animation': 'fade'});				
 				SLAMR.skillbar("animated");	
 				SLAMR.slideDownHead(true);			
 				SLAMR.scrollAnim("yes");							

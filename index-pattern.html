@@ -62,42 +62,23 @@
 	</nav>
 
 	<!--main body-->
-	<section id="head">	
-		<div class="container">
+	<section id="head" class="style3">
+		<div class="container" onclick="$.scrollTo( '#about', 800, {easing:'easeOutExpo', axis:'y'} );">		
+			<div class="head-thumbBig">
+				<img class="img-circle img-responsive" src="img/user-1.jpg" alt="" />
+			</div>
 			<div class="row">
-				<div class="hero" data-start="top:0px;opacity:1" data-top-bottom="top:500px;opacity:0">
+				<div class="hero">
 					<div class="col-sm-8 col-sm-offset-2">
 						<h1>Hi, I'm John Slamr</h1>
-						<div id="carousel-head" class="carousel slide carousel-fade">
-							<div class="carousel-inner">
-								<div class="item active">
-									<h3>UX Designer.</h3>
-								</div>
-								<div class="item">
-									<h3>Frontend Developer.</h3>
-								</div>
-								<div class="item">
-									<h3>Art Director.</h3>
-								</div>
-								<div class="item">
-									<h3>From San Francisco.</h3>
-								</div>
-							</div>
-						</div>
+						<h3>UX Designer.</h3>
 					</div>
 				</div>
 			</div>
-		</div> 
-		<div id="slides">
-			<div class="slides-container">
-				<img src="img/bg-head-1.jpg" alt="" />
-				<img src="img/bg-head-2.jpg" alt="" />
-			</div>
-		</div>
+		</div><!--container-->
 	</section>
 
-	<section id="welcome">	
-		<img alt="" class="thumb-middle" src="img/user-1.jpg">			
+	<section id="welcome">			
 		<div class="container">
 			<div class="row">
 				<div class="hero col-sm-6 col-sm-offset-3">
@@ -427,6 +408,7 @@
 				</div>
 				
 			</div><!--cv wrapper-->
+
 
 			<p>
 				<a href="#" class="btn btn-default btn-large"><i class="fa fa-download"></i> Download my CV</a>
@@ -819,7 +801,6 @@
 					<div class="space"></div>
 				</div>
 			</div>
-
 				<div class="recent-blog-container animated" data-animation-delay="200" data-animation="fadeInUp">
 					<div class="col-sm-6">
 						<div class="image">
@@ -970,13 +951,13 @@
 	
 	<section id="awards">
 		<div class="container">
-		<div class="row">
-			<div class="hero col-sm-6 col-sm-offset-3">
-				<h2>Awards</h2>
-				<p>Some Awards I received</p>
-				<div class="space"></div>
+			<div class="row">
+				<div class="hero col-sm-6 col-sm-offset-3">
+					<h2>Awards</h2>
+					<p>Some Awards I received</p>
+					<div class="space"></div>
+				</div>
 			</div>
-		</div>
 			<div class="row">
 				<div class="col-md-4 col-sm-6 info-box animated" data-animation-delay="100" data-animation="fadeIn">
 					<div class="icon">
@@ -1067,7 +1048,7 @@
 				</div>
 				<div class="col-sm-6 col-sm-offset-3 animated" data-animation-delay="300" data-animation="fadeInLeft">
 					<h2>John Slamr </h2>
-					<address>						
+					<address>
 						795 Folsom Ave, Suite 600
 						<br>
 						San Francisco, CA 94107
@@ -1143,9 +1124,8 @@
 				SLAMR.preloader();		
 				SLAMR.nav();	
 				SLAMR.parallax(true);							
-				SLAMR.slider("#slides", {'play':5000, 'animation': 'fade'});				
-				SLAMR.skillbar("animated");	
-				SLAMR.slideDownHead(true);			
+				SLAMR.slider("#slides", {'play':false, 'animation': 'fade'});				
+				SLAMR.skillbar("animated");				
 				SLAMR.scrollAnim("yes");							
 				SLAMR.owlCarousel({
 				'#owl-carousel-blog':{singleItem : true,
@@ -1180,6 +1160,7 @@
 						          '</div>',												  
 						  titleSrc: 'title',verticalFit: true,tError: '<a href="%url%">The image</a> could not be loaded.'
 					},closeBtnInside:true,midClick: true,fixedContentPos:false,preloader:true,gallery:{ enabled:true},removalDelay: 0,mainClass: 'mfp-fade'}});
+				
 				
 				SLAMR.portfolioFilter("#portfolio .filter a", "#portfolio .portfolio-grid div");
 				SLAMR.portfolio(".portfolio-link",{
